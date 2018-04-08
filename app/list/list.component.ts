@@ -6,12 +6,11 @@ import { ActivityService } from '../activity.service';
   templateUrl: './list.component.html',
   styleUrls: [ './list.component.css' ]
 })
+
 export class ListComponent {
   
   constructor(public activityService: ActivityService) {};
-
-  activitiesPool;
-   
+ 
   onChecked(activity): void {
     activity.checked = activity.checked ? false : true;
   }

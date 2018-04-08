@@ -7,7 +7,6 @@ import { ListModule } from './list/list.module';
 
 import { AppComponent } from './app.component';
 import { ActivityService } from './activity.service';
-// import { HeaderComponent } from './header.component';
 
 @NgModule({
   imports: [ BrowserModule, FormsModule, HeaderModule, ListModule],
