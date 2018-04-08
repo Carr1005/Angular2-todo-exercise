@@ -1,0 +1,8 @@
+<ul id="myUL">
+  <li *ngFor="let activity of this.activityService.getActivities()"  
+  (click)="onChecked(activity)" 
+  [class.checked]="activity.checked">
+    <span>{{activity.name}}</span>
+    <deleteButton (click)="clickDeleteActivity(activity)"></deleteButton>
+  </li>
+</ul>
